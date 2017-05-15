@@ -18,7 +18,8 @@ var projectRoutes           = require("./routes/projects"),
 //TODO:
 // Move NEW PROJECT route to projects.js
     
-mongoose.connect("mongodb://localhost/portfolio")
+// mongoose.connect("mongodb://localhost/portfolio")
+mongoose.connect("mongodb://Craig:thorcp@ds143151.mlab.com:43151/portfolio_deployed");
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended : true}));
