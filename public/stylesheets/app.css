@@ -4,35 +4,24 @@ body {
 }
 
 /* top navbar */
-#navbarTop { 
+#navbarTop, .navbar-nav { 
     background-color: #e7e8dc; 
     border: none;
 }
 
-.navbar-nav {
-    display:table;
-    width:100%;
-    margin: 0 0 0 -3%;
-}
-.navbar-nav > li {
-    float:none;
-    display:table-cell;
-    text-align:center;
-    font-size: 2em;
-    
-}
+#navbarTop a { color: black; }
 
-#navbarTop a { 
-    color: black;
-    
-}
-
-/* BOTTOM NAVBAR */
+/* bottom navbar */
 span > a {
     text-align:center;
     font-size: 2em;
     vertical-align: middle;
     line-height: 75px;
+    
+}
+
+#navbarTop a { 
+    color: black;
     
 }
 
@@ -49,7 +38,7 @@ span > a {
 
 #meTitle {
     color: #e7e8dc;
-    font-size: 8em;
+    font-size: 5em;
     text-align: center;
     font-family: 'Caveat', cursive;
     margin: 25vh auto 0 auto;
@@ -59,7 +48,7 @@ span > a {
 
 #titleBox h2 {
     color: #e7e8dc;
-    font-size: 5em;
+    font-size: 3em;
     text-align: center;
     font-family: 'Caveat', cursive;
     margin: 0 auto 25vh auto;
@@ -68,7 +57,7 @@ span > a {
 }
 
 #scrollDown {
-    font-size: 15em;
+    font-size: 10em;
     display: block;
     text-align: center;
     color: #e7e8dc;
@@ -169,10 +158,70 @@ hr {
 
 li > a { text-align:  right }
 
+/* SMALL BREAKPOINT */
 
+@media only screen and (min-width: 768px) {
+    .navbar-nav {
+        display:table;
+        width:100%;
+        margin: 0 0 0 -3%;
+    }
+    .navbar-nav > li {
+        float:none;
+        display:table-cell;
+        text-align:center;
+        font-size: 2em;
+        
+    }
+    
+    span > a {
+        text-align:center;
+        font-size: 2em;
+        vertical-align: middle;
+        line-height: 75px;
+        
+    }
+    
+    #meTitle {
+        font-size: 8em;
+    }
+    
+    #titleBox h2 {
+        font-size: 5em;
+    }
+    
+    #scrollDown {
+        font-size: 12em;
+    }
+
+
+}
 
 /* MEDIUM BREAKPOINT */
+
 @media only screen and (min-width: 992px) {
+    .navbar-nav {
+        display: inline ;
+        width:100%;
+        margin: 0;
+    }
+    .navbar-nav > li {
+        float: right;
+        display:inline;
+        text-align:center;
+        font-size: 1em;
+        
+    }
+    
+    /* BOTTOM NAVBAR */
+    span > a {
+        text-align:center;
+        font-size: 1em;
+        vertical-align: middle;
+        line-height: 50px;
+        
+    }
+    
     #meTitle {
         font-size: 8em;
         margin: 20vh auto .25em auto;
@@ -191,5 +240,8 @@ li > a { text-align:  right }
     .captions { 
         font-size: 1em;
     }
+    
+    /* SECTIONS */
+    .sections p { font-size: 1.5em; }
 }
 
