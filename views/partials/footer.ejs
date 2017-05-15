@@ -1,0 +1,24 @@
+
+    </body>
+    <footer>
+        <hr>
+        <div class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container text-center">
+                <span><a href="/">Home</a> - </span>
+                <span><a href="/home#samples">Samples</a> - </span>
+                <span><a href="/home#about">About</a> - </span>
+                <span><a href="/home#contact">Contact</a> - </span>
+                <% if(!currentUser) { %>
+                    <a href="/login">Login</a>
+                <% } else { %>
+                    <a href="/logout">Logout, <%= currentUser.username %>?</a>
+                <% }; %>
+                <span> - <a href="#titleBox">Back to Top</a></span>
+            
+            </div>
+            
+        </div>
+
+
+    </footer>
+</html>

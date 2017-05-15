@@ -1,0 +1,30 @@
+<% include partials/header %>
+
+<h1 style="text-align: center">Add New Project</h1>
+
+<div class="container">
+    <div class="row" style="width: 50%; margin: 20px auto;">
+        <form action="/projects" method="POST">
+            <div class="form-group">
+                <input class="form-control" type="text" name="order" placeholder="order">
+                <input class="form-control" type="text" name="title" placeholder="title">
+                <input class="form-control" type="text" name="thumbnail" placeholder="image url">
+                <input class="form-control" type="text" name="optionalImg1" placeholder="optional image">
+                <input class="form-control" type="text" name="optionalImg2" placeholder="optional image">
+                <input class="form-control" type="text" name="optionalImg3" placeholder="optional image">
+                <input class="form-control" type="text" name="tech" placeholder="tech">
+                <textarea class="form-control" type="text" rows="3" name="description" placeholder="short description"></textarea>
+                <textarea class="form-control" type="text" rows="7" name="descriptionFull" placeholder="full description"></textarea>
+                <input class="form-control" type="text" name="githubLink" placeholder="link to github">
+                <input class="form-control" type="text" name="exampleLink" placeholder="link to example">
+                <textarea class="form-control" type="text" rows="7" name="functionality" placeholder="functionality - comma separated"></textarea>
+                <button class="btn btn-success btn-large">Create</button>
+            </div>
+        </form>
+    </div>
+    
+</div>
+
+
+
+<% include partials/footer %>

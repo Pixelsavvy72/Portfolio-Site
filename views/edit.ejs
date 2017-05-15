@@ -1,0 +1,30 @@
+<% include partials/header %>
+
+<h1 style="text-align: center">Edit <%= project.title %></h1>
+
+<div class="container">
+    <div class="row" style="width: 50%; margin: 20px auto;">
+        <form class="ui form" action="/projects/<%= project._id %>?_method=PUT" method="POST">
+            <div class="form-group">
+                <input class="form-control" type="text" name="project[order]" placeholder="order" value="<%= project.order  %>">
+                <input class="form-control" type="text" name="project[title]" placeholder="title" value="<%= project.title  %>">
+                <input class="form-control" type="text" name="project[thumbnail]" placeholder="image url" value="<%= project.thumbnail  %>">
+                <input class="form-control" type="text" name="project[optionalImg1]" placeholder="optional image" value="<%= project.optionalImg1  %>">
+                <input class="form-control" type="text" name="project[optionalImg2]" placeholder="optional image" value="<%= project.optionalImg2  %>">
+                <input class="form-control" type="text" name="project[optionalImg3]" placeholder="optional image" value="<%= project.optionalImg3  %>">
+                <input class="form-control" type="text" name="project[tech]" placeholder="tech" value="<%= project.tech  %>">
+                <textarea class="form-control" type="text" rows="3" name="project[description]" placeholder="short description" value="<%= project.description  %>"><%= project.description %></textarea>
+                <textarea class="form-control" type="text" rows="7" name="project[descriptionFull]" placeholder="full description" value="<%= project.descriptionFull  %>"><%= project.descriptionFull %></textarea>
+                <input class="form-control" type="text" name="project[githubLink]" placeholder="link to github" value="<%= project.githubLink  %>">
+                <input class="form-control" type="text" name="project[exampleLink]" placeholder="link to example" value="<%= project.exampleLink  %>">
+                <textarea class="form-control" type="text" rows="7" name="project[functionality]" placeholder="functionality - comma separated" value="<%= project.functionality  %>"><%= project.functionality %></textarea>
+                <button class="btn btn-success btn-large">Edit</button>
+            </div>
+        </form>
+    </div>
+    
+</div>
+
+
+
+<% include partials/footer %>
