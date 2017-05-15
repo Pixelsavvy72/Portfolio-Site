@@ -28,19 +28,21 @@
         <% for(var i = 0; i < sortedOrderId.length; i++) { %>
             <% projects.forEach(function(project){ %>
                 <% if(project.order === sortedOrderId[i]) { %>
-                    <a href="/projects/<%= project._id %>">
+                    
                     <div class="col-xs-12 col-md-6 col-lg-4 nohover">
-                        <div class="thumbnail ">
-                            <h2><%= project.title %></h2>
-                            <img src="<%= project.thumbnail %>">
-                            <div class="captions">
-                                <%= project.description %><br /><br />
-                                <%= project.tech %>
-                            </div>
+                        <div class="thumbnail">
+                            <a class="nohover" style="color: black;" href="/projects/<%= project._id %>">
+                                <h2><%= project.title %></h2>
+                                <img src="<%= project.thumbnail %>">
+                                <div class="captions">
+                                    <%= project.description %><br /><br />
+                                    <%= project.tech %>
+                                </div>
+                            </a>
                         </div> <!--end thumbnail-->
                         <hr />
                     </div>
-                    </a>
+                    
                 <% }; %>
             <% }); %> <!--end forEach-->
         <% }; %>  <!-- end for --> 

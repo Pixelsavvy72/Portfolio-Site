@@ -27,11 +27,12 @@ body {
     
 }
 
+/* BOTTOM NAVBAR */
 span > a {
     text-align:center;
-    font-size: 1.5em;
+    font-size: 2em;
     vertical-align: middle;
-    line-height: 50px;
+    line-height: 75px;
     
 }
 
@@ -155,7 +156,10 @@ a:hover {
 
 a.thumbnail {border: solid 1px white; }
 
-.captions { padding: 1em; }
+.captions { 
+    padding: 1em; 
+    font-size: 2.5em;
+}
 
 hr { 
     border: none;
@@ -167,7 +171,7 @@ li > a { text-align:  right }
 
 
 
-
+/* MEDIUM BREAKPOINT */
 @media only screen and (min-width: 992px) {
     #meTitle {
         font-size: 8em;
@@ -181,6 +185,11 @@ li > a { text-align:  right }
         text-shadow: 5px 5px 3px rgba(0, 0, 0, .6), 
                      8px 8px 6px rgba(0, 0, 0, .6);
         
+    }
+    
+    /* Projects */
+    .captions { 
+        font-size: 1em;
     }
 }
 
