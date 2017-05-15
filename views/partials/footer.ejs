@@ -4,16 +4,16 @@
         <hr>
         <div class="navbar navbar-default navbar-fixed-bottom">
             <div class="container text-center">
-                <span><a href="/">Home</a> - </span>
-                <span><a href="/home#samples">Samples</a> - </span>
-                <span><a href="/home#about">About</a> - </span>
-                <span><a href="/home#contact">Contact</a> - </span>
+                <span><a href="/">Home | </a></span>
+                <span><a href="/home#samples">Samples | </a></span>
+                <span><a href="/home#about">About | </a></span>
+                <span><a href="/home#contact">Contact | </a></span>
                 <% if(!currentUser) { %>
-                    <a href="/login">Login</a>
+                    <span><a href="/login">Login | </a></span>
                 <% } else { %>
-                    <a href="/logout">Logout, <%= currentUser.username %>?</a>
+                    <span><a href="/logout">Logout, <%= currentUser.username %>? | </a></span>
                 <% }; %>
-                <span> - <a href="#titleBox">Back to Top</a></span>
+                <span><a href="#titleBox">Back to Top</a></span>
             
             </div>
             

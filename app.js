@@ -18,9 +18,8 @@ var projectRoutes           = require("./routes/projects"),
 //TODO:
 // Move NEW PROJECT route to projects.js
     
-mongoose.connect(process.env.DATABASEURL);
-//mongoose.connect("mongodb://localhost/portfolio");
-// mongoose.connect("mongodb://Craig:thorcp@ds143151.mlab.com:43151/portfolio_deployed");
+var url = process.env.DATABASEURL || "mongodb://localhost/portfolio";
+mongoose.connect(url);
 
 
 

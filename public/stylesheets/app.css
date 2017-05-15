@@ -4,18 +4,35 @@ body {
 }
 
 /* top navbar */
-#navbarTop, .navbar-nav { 
+#navbarTop { 
     background-color: #e7e8dc; 
     border: none;
 }
 
-#navbarTop a { color: black; }
+.navbar-nav {
+    display:table;
+    width:100%;
+    margin: 0 0 0 -3%;
+}
+.navbar-nav > li {
+    float:none;
+    display:table-cell;
+    text-align:center;
+    font-size: 2em;
+    
+}
 
-/* bottom navbar */
-span a { 
-    display: inline-block;
+#navbarTop a { 
+    color: black;
+    
+}
+
+span > a {
+    text-align:center;
+    font-size: 1.5em;
     vertical-align: middle;
     line-height: 50px;
+    
 }
 
 
@@ -31,17 +48,17 @@ span a {
 
 #meTitle {
     color: #e7e8dc;
-    font-size: 5em;
+    font-size: 8em;
     text-align: center;
     font-family: 'Caveat', cursive;
-    margin: 25vh auto .5em auto;
+    margin: 25vh auto 0 auto;
     text-shadow: 3px 3px 0px rgba(0, 0, 0, .6), 
                  6px 6px 5px rgba(0, 0, 0, .6);
 }
 
 #titleBox h2 {
     color: #e7e8dc;
-    font-size: 3em;
+    font-size: 5em;
     text-align: center;
     font-family: 'Caveat', cursive;
     margin: 0 auto 25vh auto;
@@ -91,15 +108,22 @@ a:hover {
     font-style: italic;
 }
 
-/* Samples About Contact Sections*/
-.sections {
+/*================
+    SECTIONS
+================*/
+
+.sections h1 {
     text-align: center;
     font-family: 'Caveat', cursive;
-    font-size: 5em;
+    font-size: 7em;
     margin: 2em auto 1em auto;
 }
 
-/* Sample Projects Styling */
+.sections p { font-size: 3em; }
+
+/*=======================
+    PROJECTS / SAMPLES
+=========================*/
 
 .inlineButtons {
     margin: 0 0 1em 0;
@@ -117,7 +141,12 @@ a:hover {
 .thumbnail {
     padding: 0;
     background-color: #e7e8dc;
-    
+    color: black;
+}
+
+.nohover:not(nohover):hover {
+    font-weight: normal;
+    font-style: normal;
 }
 
 .thumbnail .caption-full {

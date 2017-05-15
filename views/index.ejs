@@ -14,8 +14,8 @@
 ========================-->
 
 <!--Show projects on homepage ordered by order id-->
-<div class="container" id="samples">
-    <h1 class="sections">- Samples -</h1>
+<div class="container sections" id="samples">
+    <h1>- Samples -</h1>
     <div class="row text-center thumbContainer">
         <% var orderId = []; %>
         <!--for each project, add the order id to the array-->
@@ -28,21 +28,19 @@
         <% for(var i = 0; i < sortedOrderId.length; i++) { %>
             <% projects.forEach(function(project){ %>
                 <% if(project.order === sortedOrderId[i]) { %>
-            
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="thumbnail">
+                    <a href="/projects/<%= project._id %>">
+                    <div class="col-xs-12 col-md-6 col-lg-4 nohover">
+                        <div class="thumbnail ">
                             <h2><%= project.title %></h2>
                             <img src="<%= project.thumbnail %>">
                             <div class="captions">
                                 <%= project.description %><br /><br />
                                 <%= project.tech %>
                             </div>
-                            <p>
-                                <a href="/projects/<%= project._id %>" class="btn btn-primary">More info</a>
-                            </p>
                         </div> <!--end thumbnail-->
                         <hr />
                     </div>
+                    </a>
                 <% }; %>
             <% }); %> <!--end forEach-->
         <% }; %>  <!-- end for --> 
@@ -53,8 +51,8 @@
         ABOUT
 ========================-->
 
-<div class="container" id="about">
-    <h1 class="sections">- About -</h1>
+<div class="container sections" id="about">
+    <h1>- About -</h1>
     <div class="container">
         <!--<img class="img" id="mePic" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAwmAAAAJDZmNzgxNGY5LTg0ZGYtNDMzZi1iMDFhLTZjZWQ2YjU0ZDU1NQ.jpg">-->
         <p>I'm a full-stack web developer working in both ASP.NET and Node.js with a focus on creativity. I love making things. It doesn’t matter if it’s developing applications, creating art, or building Lego with my children. There is nothing more personally rewarding than bringing into existence my own thoughts and designs. I have been fortunate to have had the freedom in my professional career to exercise creativity through the building of products, services, systems, and staff. Through training and education I've also helped others to be creative and build their own dreams.
@@ -69,8 +67,8 @@
         CONTACT
 ========================-->
 
-<div class="container" id="contact">
-    <h1 class="sections" >- Contact -</h1>
+<div class="container sections" id="contact">
+    <h1>- Contact -</h1>
     <div class="row">
         <div class="container col-xs-12 col-md-4" id="email">
             <a href="mailto:craigpir@outlook.com"><i class="fa fa-envelope contactIcons" aria-hidden="true"></i></a>
