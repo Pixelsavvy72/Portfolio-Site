@@ -79,7 +79,7 @@ span > a {
     border: solid white 3px;
 }
 
-.contactIcons:hover { color: #c6c6c4; }
+.contactIcons:hover { color: #a1a584; }
 
 .contactIcons {
     transition: color .35s ease;
@@ -133,14 +133,18 @@ a:hover {
 }
 
 .thumbnail {
+    transition: background-color .35s ease;
     padding: 0;
     background-color: #e7e8dc;
     color: black;
 }
 
+.thumbnail:hover { background-color: #a1a584; }
+
 .nohover:not(nohover):hover {
     font-weight: normal;
     font-style: normal;
+
 }
 
 .thumbnail .caption-full {
