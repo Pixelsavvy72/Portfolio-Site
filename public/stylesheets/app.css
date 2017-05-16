@@ -20,8 +20,6 @@ span > a {
     
 }
 
-#navbarTop a { color: black; }
-
 
 #titleBox {
     height: 100vh;
@@ -108,7 +106,7 @@ a:hover {
     margin: 1em auto 1em auto;
 }
 
-.sections p { font-size: 3em; }
+.sections .captions { font-size: 1.75em; }
 
 /*=======================
     PROJECTS / SAMPLES
@@ -257,7 +255,7 @@ li > a { text-align:  right }
     }
     
     /* SECTIONS */
-    .sections p { font-size: 1.5em; }
+    .sections .captions { font-size: 1.5em; }
 }
 
 /* LARGE BREAKPOINT */
