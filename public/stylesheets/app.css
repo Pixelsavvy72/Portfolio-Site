@@ -82,6 +82,7 @@ span > a {
 .contactIcons:hover { color: #c6c6c4; }
 
 .contactIcons {
+    transition: color .35s ease;
     font-size: 10em;
     display: block;
     text-align: center;
