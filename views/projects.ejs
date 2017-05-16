@@ -64,12 +64,12 @@
 
         </div> <!-- end outer thumbnail -->
     </div>
-    <div class="col-sm-12 col-md-3 text-center">
+    <div class="col-sm-12 col-md-3 text-center" id="projectViewButtons">
         <% if( foundProject.githubLink ) { %>
-            <a class="btn btn-success btn-large pull-left projectViewButton" href="<%= foundProject.githubLink %>">See the code on Github</a><br /><br />
+            <a class="btn btn-success btn-large pull-left" href="<%= foundProject.githubLink %>">See the code on Github</a><br /><br />
         <% } %>
         <% if( foundProject.exampleLink ) { %>
-            <a class="btn btn-success btn-large pull-left projectViewButton" href="<%= foundProject.exampleLink %>">See it live</a>
+            <a class="btn btn-success btn-large pull-left" href="<%= foundProject.exampleLink %>">See it live</a>
         <% }; %>
     </div>
 </div>
