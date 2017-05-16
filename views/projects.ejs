@@ -41,7 +41,7 @@
                 <%= foundProject.descriptionFull %><br /><br />
                 <h2><strong>Functionality</strong></h2>
                 <div class="list-group">
-                    <% var myFunctionality = foundProject.functionality.split(","); %>
+                    <% var myFunctionality = foundProject.functionality.split("\\"); %>
                     <% myFunctionality.forEach(function(item) { %>
                          <li class="list-item"><%= item %></li>   
                     <% }); %>
