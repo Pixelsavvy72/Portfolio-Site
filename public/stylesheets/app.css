@@ -37,6 +37,7 @@ span > a {
     font-size: 3.5em;
     text-align: center;
     font-family: 'Caveat', cursive;
+    font-weight: 700;
     margin: 25vh auto 0 auto;
     text-shadow: 3px 3px 0px rgba(0, 0, 0, .6), 
                  6px 6px 5px rgba(0, 0, 0, .6);
@@ -139,12 +140,11 @@ a:hover {
     color: black;
 }
 
-.thumbnail:hover { background-color: #a1a584; }
+.indexThumbnail:hover { background-color: #a1a584; }
 
 .nohover:not(nohover):hover {
     font-weight: normal;
     font-style: normal;
-
 }
 
 .thumbnail .caption-full {
