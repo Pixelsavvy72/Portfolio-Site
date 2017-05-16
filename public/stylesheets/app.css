@@ -16,7 +16,7 @@ span > a {
     text-align:center;
     font-size: 1em;
     vertical-align: middle;
-    line-height: 75px;
+    line-height: 50px;
     
 }
 
@@ -35,7 +35,7 @@ span > a {
 
 #meTitle {
     color: #e7e8dc;
-    font-size: 4em;
+    font-size: 3.5em;
     text-align: center;
     font-family: 'Caveat', cursive;
     margin: 25vh auto 0 auto;
@@ -45,7 +45,7 @@ span > a {
 
 #titleBox h2 {
     color: #e7e8dc;
-    font-size: 2.5em;
+    font-size: 2em;
     text-align: center;
     font-family: 'Caveat', cursive;
     margin: 0 auto 25vh auto;
@@ -258,5 +258,15 @@ li > a { text-align:  right }
     
     /* SECTIONS */
     .sections p { font-size: 1.5em; }
+}
+
+/* LARGE BREAKPOINT */
+
+@media (min-width: 1280px) { 
+    
+    #titleBox h2 { margin-bottom: 25vh; }
+    
+    .sections h1 { font-size: 7em; }
+    
 }
 
