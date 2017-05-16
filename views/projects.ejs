@@ -10,25 +10,28 @@
             </a>
             <div class="caption-full">
                 <div class="col-xs-12">
-                    <div class="col-xs-4">
+                    <div class="col-md-4">
                         <% if (foundProject.optionalImg1) { %>
                             <a href="<%= foundProject.optionalImg1 %>" class="thumbnail">
                                 <img src="<%= foundProject.optionalImg1 %>">
                             </a>
+                            <hr />
                         <% }; %>
                     </div>
-                    <div class="col-xs-4">
+                    <div class="col-md-4">
                         <% if (foundProject.optionalImg2) { %>
                             <a href="<%= foundProject.optionalImg2 %>" class="thumbnail">
                                 <img src="<%= foundProject.optionalImg2 %>">
                             </a>
+                            <hr />
                         <% }; %>
                     </div>
-                    <div class="col-xs-4">
+                    <div class="col-md-4">
                         <% if (foundProject.optionalImg3) { %>
                             <a href="<%= foundProject.optionalImg3 %>" class="thumbnail">
                                 <img src="<%= foundProject.optionalImg3 %>">
                             </a>
+                            <hr />
                         <% }; %>
                     </div>
                 </div>
@@ -63,10 +66,10 @@
     </div>
     <div class="col-sm-12 col-md-3 text-center">
         <% if( foundProject.githubLink ) { %>
-            <a class="btn btn-success btn-large pull-left" href="<%= foundProject.githubLink %>">See the code on Github</a><br /><br />
+            <a class="btn btn-success btn-large pull-left projectViewButton" href="<%= foundProject.githubLink %>">See the code on Github</a><br /><br />
         <% } %>
         <% if( foundProject.exampleLink ) { %>
-            <a class="btn btn-success btn-large pull-left" href="<%= foundProject.exampleLink %>">See it live</a>
+            <a class="btn btn-success btn-large pull-left projectViewButton" href="<%= foundProject.exampleLink %>">See it live</a>
         <% }; %>
     </div>
 </div>
