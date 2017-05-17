@@ -41,7 +41,7 @@ span > a {
 #titleBox {
     height: 100vh;
     margin-top: -82px;
-    background-image: url("http://imgur.com/gXNHEOi.jpg");
+    background-image: url("/images/PortfolioBackground.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
