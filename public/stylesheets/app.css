@@ -11,6 +11,22 @@ body {
 
 #navbarTop a { color: black; }
 
+#hireMe {
+/*    animation-name: wiggle;
+    animation-duration: 1s;
+    animation-iteration-count: 5;*/
+    animation: slide 1.75s ease-in;
+}
+
+@keyframes slide {
+    0% { left: -800px; }
+    75% { left: 0 }
+    80% { left: -50px; }
+    85% { left: 0 }
+    92% { left: -25px; }
+    100% { left: 0; }
+}
+
 /* bottom navbar */
 span > a {
     text-align:center;
@@ -70,20 +86,6 @@ span > a {
   15%,20% { opacity: 1 }
   35% {opacity: .4; }
   100% {opacity: .4; }
-}
-
-#hireMe {
-    float: right;
-    position: absolute;
-    right: 5vw;
-    bottom: 1vh;
-    background-color: yellow;
-    width: 20vw;
-    text-align: center;
-    transform: rotate(15deg);
-    border-radius: 50%;
-    padding: 0 0 20px 0;
-    
 }
 
 #mePic {
@@ -236,6 +238,24 @@ li > a { text-align:  right }
     #scrollDown {
         font-size: 14em;
     }
+    
+    #hireMe {
+    /*    animation-name: wiggle;
+        animation-duration: 1s;
+        animation-iteration-count: 5;*/
+        animation: slide 2s linear, wiggle 1s linear 2s alternate 2;
+    }
+    
+    @keyframes slide {
+        0% { left: -1000px; }
+        100% { left: 0 }
+    }
+    
+    @keyframes wiggle {
+        25% {transform: rotate(15deg); color: #750604 ; font-size: 1.5em;}
+        50% {transform: rotate(-15deg); color: black;}
+        75% {transform: rotate(15deg); color: #750604; font-size: 1.5em}
+    }
 
 
 }
@@ -275,6 +295,26 @@ li > a { text-align:  right }
     }
     
     #scrollDown { font-size: 14em; }
+    
+    #hireMe {
+    /*    animation-name: wiggle;
+        animation-duration: 1s;
+        animation-iteration-count: 5;*/
+        animation: slide 2s linear, wiggle 1s linear 2s alternate 2;
+    }
+    
+    p { font-size: 2em; }
+    
+    @keyframes slide {
+        0% { left: -2000px; }
+        100% { left: 0 }
+    }
+    
+    @keyframes wiggle {
+        25% {transform: rotate(15deg); color: #750604 ; font-size: 1.5em;}
+        50% {transform: rotate(-15deg); color: black;}
+        75% {transform: rotate(15deg); color: #750604; font-size: 1.5em}
+    }
     
     /* Projects */
     .captions { 
