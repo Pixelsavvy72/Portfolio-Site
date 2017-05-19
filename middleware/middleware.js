@@ -42,5 +42,11 @@ middlewareObj.checkProjectOwnership = function(req, res, next) {
     }
 };
 
+middlewareObj.sanitizeForm = function(req, res, next) {
+    Object.keys(req.body).forEach(function(key){
+        req.body[key] = req.sanitize(req.body[key]);
+    });
+};
+
 
 module.exports = middlewareObj;
