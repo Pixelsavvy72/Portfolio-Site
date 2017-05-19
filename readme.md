@@ -12,6 +12,7 @@ This website was designed to be elegantly simple and easy to use. Almost all inf
 - Flash messaging
 - Full CRUD operations
 
+## Tech
 
 - Node.js
 - Express
