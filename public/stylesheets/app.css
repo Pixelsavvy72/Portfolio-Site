@@ -9,7 +9,9 @@ body {
     border: none;
 }
 
-#navbarTop a { color: black; }
+#navbarTop a { 
+    color: black;
+}
 
 #hireMe { animation: slide 1.75s ease-in; }
 
@@ -71,8 +73,8 @@ span > a {
     color: #e7e8dc;
     opacity: .4;
     animation: fade 10s linear infinite;
-    -webkit-animation-delay: 10s; 
-    animation-delay: 1.5s;
+    -webkit-animation-delay: 7s; 
+    animation-delay: 4s;
 }
 
 /* #scrollDown animation*/
@@ -238,10 +240,7 @@ li > a { text-align:  right }
     }
     
     #hireMe {
-    /*    animation-name: wiggle;
-        animation-duration: 1s;
-        animation-iteration-count: 5;*/
-        animation: slide 2s linear, wiggle 1s linear 2s alternate 2;
+        animation: slide 1s linear, wiggle 1s linear 1s alternate 2;
     }
     
     @keyframes slide {
@@ -264,11 +263,8 @@ li > a { text-align:  right }
     
     p { font-size: 2em; }
     
-    .navbar-nav {
-
-    }
     .navbar-nav > li {
-
+        font-size: 1.5em;
     }
     
     /* BOTTOM NAVBAR */
@@ -301,7 +297,7 @@ li > a { text-align:  right }
     /*    animation-name: wiggle;
         animation-duration: 1s;
         animation-iteration-count: 5;*/
-        animation: slide 3s linear, wiggle 1s linear 3s 2;
+        animation: slide 1.5s linear, wiggle 1s linear 1.5s 2;
     }
     
     @keyframes slide {
