@@ -37,6 +37,8 @@ router.get("/register", function(req, res){
 
 // REGISTER POST ROUTE
 router.post("/register", function(req, res){
+    req.body.username = req.sanitize(req.body.username);
+    req.body.password = req.sanitize(req.body.password);
     var newUser = new User({ username : req.body.username });
     User.register(newUser, req.body.password, function(err, user){
         if (err) {

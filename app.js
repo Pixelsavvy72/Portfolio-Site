@@ -2,6 +2,7 @@ var express                 = require("express"),
     app                     = express(),
     request                 = require("request"),
     bodyParser              = require("body-parser"),
+    expressSanitizer        =require("express-sanitizer"),
     mongoose                = require("mongoose"),
     passport                = require("passport"),
     flash                   = require("connect-flash"),
@@ -26,6 +27,7 @@ mongoose.connect(url);
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended : true}));
+app.use(expressSanitizer());
 app.use(methodOverride("_method"));
 app.use(express.static(__dirname + "/public"));
 app.use(flash());
