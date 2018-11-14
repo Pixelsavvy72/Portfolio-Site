@@ -22,3 +22,8 @@ This website was designed to be elegantly simple and easy to use. Almost all inf
 - HTML5
 - CSS3 
 - Bootstrap
+
+<img src="http://www.craigpirrall.com/images/CraigPortfolioHomeLoggedIn.png" width="600">
+<img src="http://www.craigpirrall.com/images/CraigPortfolioProjectBottom.png" width="600">
+<img src="http://www.craigpirrall.com/images/CraigPortfolioAddNew.png" width="600">
+<img src="http://www.craigpirrall.com/images/CraigPortfolioEdit.png" width="600">
